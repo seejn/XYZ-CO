@@ -1,0 +1,66 @@
+input[type=text],input[type=password],input[type=email],input[type=number]
+{
+  margin: 5px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 50px;
+}
+.personalInfo,.networkInfo,.paymentInfo
+{
+width: 100%;
+text-align: left;
+padding: 0 70px;
+font-family: arial black;
+}
+.form
+{
+  width: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 55%;
+  height: 80%;
+  overflow: auto;
+}
+fieldset
+{
+  margin: 15px;
+  padding: 15px;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

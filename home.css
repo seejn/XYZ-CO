@@ -1,0 +1,267 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.header{
+  color: grey;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.navContact
+{
+  font-family: arial black;
+  color: black;
+  background-color: lightgreen;
+}
+nav{
+  background: #2BAE66FF;
+  height: 50px;
+  width: 100%;
+ }
+label.logo{
+  color: white;
+  line-height: 50px;
+  padding: 0 100px;
+}
+.logo img{
+  height: 50px;
+  transition: 0.5s;
+}
+nav:hover .logo img
+{
+  transform: rotateX(1800deg);
+  transition: transform 10s;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+nav ul li .anchor
+{
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: arial black;
+}
+.anchor:hover{
+  color: white;
+  background: green;
+  transition: .5s;
+  text-decoration: none;
+}
+.active{
+  background-color: black;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 50px;
+  margin-right: 40px;   
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.marginTop
+{
+  font-family: arial black;
+  margin-top: 68px;
+}
+.offersContainer{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: url(images/Wifi-main.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.offers{
+  margin: 0 20px;
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.offersContent
+{
+  width: 98%;
+  margin: 20px;
+  border-radius: 50px;
+  box-shadow: 2px 49px 146px -50px orange;
+}
+.offersContent p
+{
+  color: white;
+font-size: 25px;
+margin: 15px 0;
+}
+.bottom
+{
+  margin: 30px;
+  width: 100%;  
+}
+.memberShip
+{
+  height: 110vh;
+  background: #EAEAEA;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mbrshpContent
+{
+  height: 70%;
+  width: 95%;
+  margin: 0 10px;
+  background: url(images/homePage.jpg);
+  background-size: 50% 100%;
+}
+
+.beMember
+{
+  float: right;
+  background-color: #2BAE66FF;
+  width: 50%;
+  height: 100%;  
+
+}
+.parahead
+{
+  height: 180px;
+  color: white;
+  font-family: arial black;
+  margin: 50px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.parahead h1
+{
+  font-size: 45px;
+}
+.parahead p
+{
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/*Footer Codes*/
+
+.footer{
+  width: 100%;
+  background-color: #00121b;
+  font-family: arial black;
+  display: block;
+}
+.innerFooter:hover .footerLogo img
+{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+
+}
+.innerFooter{
+  width: 95%;
+  margin-right: 0;
+  padding: 30px 10px;
+  display: flex;  
+  justify-content: space-between;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.footerItems{
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: lightblue;
+}
+.footerItems ul li
+{
+padding: 5px;
+}
+.footerAnchor
+{
+  display: block;
+  color: lightblue;
+}
+.footerAnchor:hover
+{
+  color: #2BAE66FF;
+}
+.footerItems h1,.socialMedia h1,.footerBottom
+{
+  font-size: 20px;
+  color: white;
+}
+.footerItems p
+{
+  text-align: justify;
+}
+.footerBottom
+{
+  font-size: 13px;
+}
+/*responsiveNavbar code*/
+
+@media (max-width: 1250px){
+  label.logo{
+    padding-left: 20px;
+  }
+  .ul li .anchor{
+    font-size: 14px;
+  }
+}
+@media (max-width: 1050px){
+  .checkbtn{
+    display: block;
+  }
+  .ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ADEFD1FF;
+    top: 68px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 50px;
+  }
+  .ul li .anchor{
+    font-size: 20px;
+    color: #00203FFF;
+    font-family: arial black;
+  }
+  .anchor:hover{
+    color: #2BAE66FF;
+    background-color: white;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  height: calc(100vh - 80px);
+}

@@ -1,0 +1,269 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+.section{
+    margin-top: 100px;
+
+}
+nav{
+  background: #2BAE66FF;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+nav:hover .logo img{
+  transform: scale(1.1);
+}
+label.logo{
+  color: white;
+  line-height: 100px;
+  padding: 0 100px;
+}
+.logo img{
+  height: 100px;
+  transition: 0.5s;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-family: montserrat;
+}
+a:hover{
+  color: white;
+  background: green;
+  transition: .5s;
+  text-decoration: none;
+}
+a:active{
+	background-color: black;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+/*CSS for button */
+.button
+{
+  margin-left: 37.6%;
+  margin-top: 75vh;
+}
+button a{
+  color: white;
+}
+button,input[type=submit],input[type=reset]
+{
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #2BAE66FF;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: montserrat;
+  transition: 0.3s;
+}
+button:hover,input[type=submit]:hover,input[type=reset]:hover
+{
+  background-color: green  ;
+}
+/*End*/
+
+.strike{
+  text-decoration: line-through;
+}
+
+
+.offers h1,.footer h1{
+  margin: 0;
+}
+.offers .recentOffer{
+  background-color: lightgrey;
+  border: 2px solid red;
+  width: 50%;
+  overflow: hidden;
+}
+.offer{
+  padding: 50px 0;
+}
+.header{
+  margin-top: 30px;
+}
+.body{
+  margin-top: 50px;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+}
+.mbpsOffer
+{
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 30px 10px 30px 10px;
+  overflow: hidden;
+}
+.mbpsOffer p{
+  font-size: 18px;
+  width: 80%;
+  padding: 30px 20px;
+  font-family: montserrat;
+}
+
+.customers
+{
+  padding: 15px 0;
+  cursor: pointer;
+  background-color: #97A1D7;
+}
+.customer{
+  height: 45vh;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0 0 40px;
+}
+.customer:hover .customerPhoto
+{
+ margin-left: 60px;
+}
+.customerPhoto{
+  border: none;
+  height: 70%;
+  width: 15%;
+  border-radius: 100px;
+  margin: 15px;
+  overflow: hidden;
+  box-shadow: -20px 30px 50px 40px #888888;
+  transition: 0.3s;
+}
+.customerPhoto img
+{
+  height: 100%;
+  width: 100%;
+  transition: 0.4s;
+}
+.paragraph{
+  margin: 15px 0 0 80px;
+  background-color: #5D73F2
+  height: 100%;
+  width: 60%;
+  text-align: center;
+}
+.paragraph p
+{
+  border-radius: 100px 0 100px 0;
+  margin-top: 50px;
+  padding: 50px 0;
+  color: white;
+  background-color: #5D73F2;
+  font-size: 20px;
+  font-family: montserrat;
+}
+
+.footer{
+  width: 100%;
+  background-color: #00121b;
+  display: block;
+}
+.innerFooter{
+  width: 95%;
+  margin-right: 0;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.footerItems{
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: lightblue;
+}
+.footerItems h1,.socialMedia h1,.footerBottom
+{
+  color: white;
+}
+.footerItems p
+{
+  text-align: justify;
+}
+@media (max-width: 1250px){
+  label.logo{
+    padding-left: 20px;
+  }
+  nav ul li a{
+    font-size: 14px;
+  }
+}
+@media (max-width: 1170px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ADEFD1FF;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 50px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #00203FFF;
+    font-family: montserrat;
+  }
+  a:hover{
+    color: #2BAE66FF;
+    background-color: white;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  height: calc(100vh - 80px);
+}

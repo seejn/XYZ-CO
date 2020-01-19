@@ -1,0 +1,34 @@
+/*CSS for button */
+.memButton
+{
+  color: #2BAE66FF;
+  background-color: white;
+}
+.memButton:hover
+{
+  color: white;
+}
+button a{
+  color: white;
+}
+button,input[type=submit],input[type=reset]
+{
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #2BAE66FF;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: arial black;
+  transition: 0.1s;
+  cursor: pointer;
+}
+button:hover,input[type=submit]:hover,input[type=reset]:hover
+{
+  background-color: green  ;
+}
+/*End*/

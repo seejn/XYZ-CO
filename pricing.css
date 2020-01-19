@@ -1,0 +1,37 @@
+.table
+{
+	margin-top: 50px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: white;
+}
+.tr
+{
+	background-color: orange;
+	color: white;
+	font-size: 18px;
+}
+
+.tr1
+{
+	background-color: red;
+}
+
+.tr2
+{
+	background-color: green;
+}
+
+.tr3
+{
+	background-color: lightgreen;
+}

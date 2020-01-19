@@ -5,7 +5,7 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  font-family: arial black;
+  font-family: montserrat;
 }
 
 th, td {
@@ -14,24 +14,30 @@ th, td {
   border-bottom: 1px solid #ddd;
   color: white;
 }
+.pricing
+{
+	
+	margin-top: 100px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
 .tr
 {
-	background-color: orange;
+	background-color: 	black	;
 	color: white;
 	font-size: 18px;
 }
 
 .tr1
 {
-	background-color: red;
+	background-color: #F97E4D;
 }
 
 .tr2
 {
-	background-color: green;
+	background-color: #7ED7F9;
 }
 
 .tr3
 {
-	background-color: lightgreen;
-}
+	background-color: #8DFBCC;

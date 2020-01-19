@@ -16,6 +16,8 @@ font-family: arial black;
 .form
 {
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* The Modal (background) */

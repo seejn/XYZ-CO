@@ -2,7 +2,7 @@
 {
 	margin-top: calc(69px + 50px);
 	margin-bottom: 50px;
-	height: 60vh;
+	height: 80vh;
 	width: 90%;
 	background-color: grey;
 	display: flex;
@@ -17,5 +17,23 @@
 }
 .firstContent
 {
+	margin: 30px;
 	font-size: 30px;
+}
+.supportDiv
+{
+	padding: 80px 0;
+	height: auto;
+	width: 100%;
+	background-color: #dbcbca;
+	display: flex;
+	justify-content: space-around;
+}
+.online form
+{
+	height: 70vh;
+}
+.querySubmit
+{
+	margin-top: 8px;
 }

@@ -18,10 +18,6 @@
 	display: flex;
 	justify-content: flex-end;
 }
-.map iframe
-{
-	margin-left: 10px;
-}
 .address1
 {
 	display: flex;
